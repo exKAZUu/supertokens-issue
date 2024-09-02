@@ -32,7 +32,7 @@ async function main() {
     const ret = await EmailPasswordNode.signUp('public', 'example@example.com', 'example-password');
     console.info('EmailPasswordNode.signUp:', ret);
 
-    const superTokensUsers = await SuperTokensNode.listUsersByAccountInfo('public', {email: 'exkazuu@gmail.com'});
+    const superTokensUsers = await SuperTokensNode.listUsersByAccountInfo('public', {email: 'example@example.com'});
     console.info('superTokensUsers:', superTokensUsers);
     if (!superTokensUsers[0]) throw new Error('SuperTokens user not found.');
 
